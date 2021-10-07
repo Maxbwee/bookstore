@@ -56,7 +56,7 @@ public class BookController {
 	public String addBook(Model model) {
 		model.addAttribute("book", new Book());
 		model.addAttribute("categorys", crepository.findAll());
-		return "addBook";
+		return "addbook";
 	}
 	// Save new book
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
