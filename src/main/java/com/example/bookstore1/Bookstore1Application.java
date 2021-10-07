@@ -40,7 +40,7 @@ public class Bookstore1Application {
 		
 
 			
-			brepository.save(new Book("Sun Tzu", "Art of War", 1, "978010-22", crepository.findByName("History").get(0)));
+			brepository.save(new Book("Art of War", "Sun Tzu", 1, "978010-22", crepository.findByName("History").get(0)));
 	
 			// Creating users: admin/admin user/user
 			User user1 = new User("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6", "USER");
