@@ -48,7 +48,7 @@ public class Bookstore1Application {
 			urepository.save(user1);
 			urepository.save(user2);
 			
-			
+			urepository.deleteAll();
 			
 			log.info("fetch all books");
 			for (Book book : brepository.findAll()) {
