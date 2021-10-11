@@ -36,7 +36,6 @@ public class BookRepositoryTest {
 		assertThat(book.getId()).isNotNull();
 	}
 
-	
 
 	
 }
