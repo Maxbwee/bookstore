@@ -31,7 +31,7 @@ public class Bookstore1Application {
 	@Bean
 	public CommandLineRunner bookDemo(BookRepository brepository, CategoryRepository crepository, UserRepository urepository) {
 		return (args) -> {
-				
+			urepository.deleteAll();	
 			log.info("save a couple of books");
 			crepository.save(new Category("Fiction"));
 			crepository.save(new Category("History"));
@@ -48,7 +48,7 @@ public class Bookstore1Application {
 			urepository.save(user1);
 			urepository.save(user2);
 			
-			urepository.deleteAll();
+			
 			
 			log.info("fetch all books");
 			for (Book book : brepository.findAll()) {
